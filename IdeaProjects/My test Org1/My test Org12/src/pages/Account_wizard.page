@@ -1,0 +1,16 @@
+<apex:page standardController="Account" sidebar="false">
+    
+    <apex:includeScript value="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"/>
+    <script>
+        var j$ = jQuery.noConflict();
+        j$("iframe").each(function(){
+            j$(this).load(function() {
+                j$(this).height( j$(this).contents().find("body").height('100%') );
+            });
+        });
+    </script>
+ 
+    <apex:form style="height:100px; border:1px solid red">
+    	<apex:outputText >Hello This is custom Wizard Vf page</apex:outputText><apex:outputText >Hello This is custom Wizard Vf page</apex:outputText><apex:outputText >Hello This is custom Wizard Vf page</apex:outputText><apex:outputText >Hello This is custom Wizard Vf page</apex:outputText><apex:outputText >Hello This is custom Wizard Vf page</apex:outputText><apex:outputText >Hello This is custom Wizard Vf page</apex:outputText><apex:outputText >Hello This is custom Wizard Vf page</apex:outputText><apex:outputText >Hello This is custom Wizard Vf page</apex:outputText><apex:outputText >Hello This is custom Wizard Vf page</apex:outputText><apex:outputText >Hello This is custom Wizard Vf page</apex:outputText>
+    </apex:form>
+</apex:page>
