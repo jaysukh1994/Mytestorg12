@@ -4,5 +4,6 @@ public class AccountTestVf {
     AccountTestVf()
     {
         System.debug('Print something');
+        Map<String,Schema.SObjectType> objectTypeMap= Schema.getGlobalDescribe();
     }
 }
