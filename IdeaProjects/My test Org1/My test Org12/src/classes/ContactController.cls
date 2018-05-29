@@ -1,6 +1,6 @@
 public class ContactController {
 
-    
+    // Added comment for git hub testing
      @AuraEnabled
     public static List<Contact> findAll() {
         return [SELECT id, name, phone,Email FROM Contact LIMIT 50];
