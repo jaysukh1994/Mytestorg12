@@ -1,6 +1,6 @@
 <aura:component controller="ContactController" implements="force:appHostable,flexipage:availableForAllPageTypes,force:hasRecordId,force:hasSObjectName">
 	<aura:attribute name="contact" type="Contact" default="{'sobjectType': 'Contact'}"/>
-    <aura:handler event="aura:locationChange" action="{!c.locationChange}"/>
+     <aura:handler event="aura:locationChange" action="{!c.locationChange}"/>
 
     <div class="details">
         <h1>{!v.contact.Name}</h1>
